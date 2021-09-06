@@ -8,9 +8,6 @@ html {
   font-size: 100%;
 }
 
-// Headings, Call-to-actions, Header Navigation
-// font-family: 'Raleway', sans-serif;
-
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +20,11 @@ body {
   color: $white;
 }
 
-nav {
+h1,
+h2,
+h3,
+.header,
+.cta {
   font-family: "Raleway", sans-serif;
 }
 
