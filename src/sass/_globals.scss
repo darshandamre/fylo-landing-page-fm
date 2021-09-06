@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: $font-size;
+}
+
+// Headings, Call-to-actions, Header Navigation
+// font-family: 'Raleway', sans-serif;
