@@ -14,3 +14,5 @@ node_modules
 # Parcel related files
 dist/
 .parcel-cache/
+
+.vscode
