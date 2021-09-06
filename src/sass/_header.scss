@@ -11,6 +11,7 @@
 
   &__link {
     position: relative;
+    color: $white-pale;
 
     & + & {
       margin-left: 1.72em;
