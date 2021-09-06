@@ -1,0 +1,19 @@
+{
+  "name": "fylo-dark-theme-page",
+  "version": "1.0.0",
+  "description": "A landing page for Fylo",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "darshan",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0",
+    "sass": "^1.39.0"
+  }
+}
