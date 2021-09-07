@@ -1,7 +1,26 @@
 .hero {
   text-align: center;
 
-  background-color: $dark-blue-intro-email-bg;
+  background: linear-gradient(
+    to bottom,
+    $dark-blue-intro-email-bg 0%,
+    $dark-blue-intro-email-bg 60%,
+    $dark-blue-main-bg 60%,
+    $dark-blue-main-bg 100%
+  );
+
+  position: relative;
+
+  &__overlay {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 38%;
+  }
+
+  &__content {
+    position: relative;
+  }
 
   &__image {
     padding: 1.72em 0;
@@ -16,14 +35,15 @@
     margin: 1.72em 0 2em 0;
     color: $white-pale;
   }
+}
 
-  &__btn {
-    display: inline-block;
-    font-size: $font-size;
-    font-weight: 700;
+.hero__btn {
+  display: inline-block;
+  font-size: $font-size;
+  font-weight: 700;
 
-    padding: 1.2em 5.7em;
-    background-color: $cyan;
-    border-radius: 100px;
-  }
+  padding: 1.2em 5.7em;
+  background-color: $blue;
+  background-image: linear-gradient(to right, $cyan 0%, $blue 100%);
+  border-radius: 100px;
 }
