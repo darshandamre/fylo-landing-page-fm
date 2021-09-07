@@ -1,3 +1,16 @@
 .feature {
   text-align: center;
+
+  > .container {
+    margin-top: 9.28em;
+    margin-bottom: 9.28em;
+  }
+
+  &__content:not(:first-child) {
+    margin-top: 6.5em;
+  }
+
+  &__title {
+    margin-top: 1.67em;
+  }
 }
