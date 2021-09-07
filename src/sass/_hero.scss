@@ -35,15 +35,15 @@
     margin: 1.72em 0 2em 0;
     color: $white-pale;
   }
-}
 
-.hero__btn {
-  display: inline-block;
-  font-size: $font-size;
-  font-weight: 700;
+  &__btn {
+    display: inline-block;
+    font-size: $font-size;
+    font-weight: 700;
 
-  padding: 1.2em 5.7em;
-  background-color: $blue;
-  background-image: linear-gradient(to right, $cyan 0%, $blue 100%);
-  border-radius: 100px;
+    padding: 1.2em 5.7em;
+    background-color: $blue;
+    background-image: linear-gradient(to right, $cyan 0%, $blue 100%);
+    border-radius: 100px;
+  }
 }
