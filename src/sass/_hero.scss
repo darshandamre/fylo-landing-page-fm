@@ -1,6 +1,8 @@
 .hero {
   text-align: center;
 
+  background-color: $dark-blue-intro-email-bg;
+
   &__image {
     padding: 1.72em 0;
   }
@@ -14,11 +16,14 @@
     margin: 1.72em 0;
     color: $white-pale;
   }
+
   &__btn {
+    display: inline-block;
     font-size: $font-size;
     font-weight: 700;
+    line-height: 1;
 
-    padding: 1.4em 5.7em;
+    padding: 1.2em 5.7em;
     background-color: $cyan;
     border-radius: 100px;
   }
