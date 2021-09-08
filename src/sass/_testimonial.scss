@@ -1,0 +1,50 @@
+.testimonial {
+  margin: 10.85em 0;
+
+  &__quotes-icon {
+    width: 24px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+  }
+
+  &__card {
+    background-color: $dark-blue-testimonials-bg;
+    padding: 2.34em 1.75em 1.84em 1.75em;
+    border-radius: 5px;
+
+    & + & {
+      margin-top: 1.72em;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 1.5em;
+    color: $white-pale;
+    font-size: $font-size-sm;
+  }
+
+  &__image {
+    width: 28px;
+    height: 28px;
+    margin-right: 0.5em;
+
+    position: relative;
+    top: 2px;
+
+    border-radius: 100px;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: $font-size-sm;
+  }
+
+  &__position {
+    margin: 0;
+    color: $white-pale;
+    font-size: $font-size-xs;
+  }
+}
