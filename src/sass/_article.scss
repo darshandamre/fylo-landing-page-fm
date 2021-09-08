@@ -2,4 +2,25 @@
   &__image {
     padding: 2.15em 0;
   }
+
+  &__title {
+    font-size: $font-size-l;
+  }
+
+  &__text {
+    color: $white-pale;
+  }
+
+  &__link {
+    font-size: $font-size-sm;
+    color: $cyan;
+    padding-bottom: 0.25em;
+    border-bottom: 1px solid $cyan;
+
+    &__icon {
+      position: relative;
+      top: 3px;
+      left: 3px;
+    }
+  }
 }
