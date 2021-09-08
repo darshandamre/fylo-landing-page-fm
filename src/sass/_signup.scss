@@ -1,0 +1,20 @@
+.signup {
+  text-align: center;
+
+  background-image: linear-gradient(
+    to bottom,
+    $dark-blue-main-bg 0%,
+    $dark-blue-main-bg 50%,
+    $dark-blue-footer-bg 50%,
+    $dark-blue-footer-bg 100%
+  );
+
+  &__container {
+    background-color: $dark-blue-intro-email-bg;
+  }
+
+  &__email {
+    display: block;
+    margin: 0 auto;
+  }
+}

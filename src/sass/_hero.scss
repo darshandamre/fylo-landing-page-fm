@@ -43,7 +43,7 @@
 
     padding: 1.2em 5.7em;
     background-color: $blue;
-    background-image: $cyan-to-blue;
+    background-image: linear-gradient(to right, $cyan 0%, $blue 100%);
     border-radius: 100px;
   }
 }
