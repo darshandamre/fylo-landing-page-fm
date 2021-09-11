@@ -45,5 +45,14 @@
 
     border: none;
     border-radius: 100px;
+    cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        $cyan-light 0%,
+        $blue-light 100%
+      );
+    }
   }
 }

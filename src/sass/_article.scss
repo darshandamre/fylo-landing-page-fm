@@ -17,6 +17,11 @@
     padding-bottom: 0.25em;
     border-bottom: 1px solid $cyan;
 
+    &:hover {
+      color: $white;
+      border-bottom: 1px solid $white;
+    }
+
     &__icon {
       position: relative;
       top: 3px;

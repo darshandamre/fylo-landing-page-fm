@@ -11,6 +11,11 @@
 
   &__link {
     margin-bottom: 1em;
+
+    &:hover {
+      color: $white;
+      font-weight: 700;
+    }
   }
 }
 
@@ -60,6 +65,11 @@
 
     & + & {
       margin-left: 0.7em;
+    }
+
+    &:hover {
+      color: $cyan;
+      border: 1px solid $cyan;
     }
   }
 }
