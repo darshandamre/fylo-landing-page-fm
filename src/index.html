@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="../src/sass/style.scss" />
 
     <title>Fylo landing page with dark theme</title>
+
+    <script
+      src="https://kit.fontawesome.com/4294495d3c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -231,30 +236,33 @@
           <address class="address">
             <div class="flex">
               <img
-                class="address__icon"
+                class="address__icon--location flex--fs-0 flex--as-fs"
                 src="../images/icon-location.svg"
                 alt="location"
               />
-              <p class="address__location">
+
+              <p class="address__details">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </p>
             </div>
             <div class="flex">
               <img
-                class="address__icon"
+                class="address__icon--phone flex--fs-0 flex--as-c"
                 src="../images/icon-phone.svg"
                 alt="phone"
               />
-              <p class="address__phone">+1-543-123-4567</p>
+
+              <p class="address__details">+1-543-123-4567</p>
             </div>
             <div class="flex">
               <img
-                class="address__icon"
+                class="address__icon--email flex--fs-0 flex--as-c"
                 src="../images/icon-email.svg"
                 alt="email"
               />
-              <p class="address__email">example@fylo.com</p>
+
+              <p class="address__details">example@fylo.com</p>
             </div>
           </address>
 
@@ -271,13 +279,13 @@
             <li class="footer__link"><a href="#">Privacy</a></li>
           </ul>
 
-          <div class="social">
-            <a class="social__icon" href="#">
-              <img src="../images/facebook-f-brands.svg" alt="facebook" /> </a
-            ><a class="social__icon" href="#">
-              <img src="../images/twitter-brands.svg" alt="twitter" /> </a
-            ><a class="social__icon" href="#">
-              <img src="../images/instagram-brands.svg" alt="instagram" />
+          <div class="social flex flex--jc-c">
+            <a class="social__icon flex flex--jc-c flex--ai-c" href="#">
+              <i class="fab fa-facebook-f"></i> </a
+            ><a class="social__icon flex flex--jc-c flex--ai-c" href="#">
+              <i class="fab fa-twitter"></i> </a
+            ><a class="social__icon flex flex--jc-c flex--ai-c" href="#">
+              <i class="fab fa-instagram"></i>
             </a>
           </div>
 

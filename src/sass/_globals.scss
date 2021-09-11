@@ -38,6 +38,12 @@ a {
   line-height: 1;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 89.333%;
   max-width: 750px;
@@ -47,11 +53,31 @@ a {
 .flex {
   display: flex;
 
-  &--jc-sb {
-    justify-content: space-between;
+  &--jc {
+    &-sb {
+      justify-content: space-between;
+    }
+
+    &-c {
+      justify-content: center;
+    }
   }
 
   &--ai-c {
     align-items: center;
+  }
+
+  &--as {
+    &-fs {
+      align-self: flex-start;
+    }
+
+    &-c {
+      align-self: center;
+    }
+  }
+
+  &--fs-0 {
+    flex-shrink: 0;
   }
 }

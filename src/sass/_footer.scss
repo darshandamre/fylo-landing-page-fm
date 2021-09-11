@@ -1,3 +1,65 @@
 .footer {
   background-color: $dark-blue-footer-bg;
+
+  &__logo {
+    padding: 5.15em 0 3.05em 0;
+  }
+
+  ul {
+    margin-bottom: 3.5em;
+  }
+
+  &__link {
+    margin-bottom: 1em;
+  }
+}
+
+.address {
+  font-style: normal;
+  margin-bottom: 6em;
+
+  > div {
+    margin-bottom: 1.5em;
+  }
+
+  &__icon {
+    &--location {
+      width: 13px;
+      margin-top: 7px;
+      margin-right: 27px;
+    }
+
+    &--phone {
+      width: 18px;
+      margin-right: 22px;
+    }
+
+    &--email {
+      width: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  &__details {
+    margin: 0;
+  }
+}
+
+.social {
+  margin-top: 5em;
+  padding-bottom: 3em;
+
+  &__icon {
+    width: 28px;
+    height: 28px;
+    padding: 0.35em;
+
+    border: 1px solid $greyish-white;
+
+    border-radius: 100px;
+
+    & + & {
+      margin-left: 0.7em;
+    }
+  }
 }
