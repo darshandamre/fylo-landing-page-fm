@@ -3,18 +3,34 @@
 
   > .container {
     padding: 1.72em 0;
+
+    @include breakpoint-up("small") {
+      padding: 3.5em 0;
+    }
   }
 
   &__logo {
     width: 5rem;
+
+    @include breakpoint-up("small") {
+      width: 11.25rem;
+    }
   }
 
   &__link {
     position: relative;
     color: $greyish-white;
 
+    @include breakpoint-up("small") {
+      font-size: $fs-20px;
+    }
+
     & + & {
       margin-left: 1.72em;
+
+      @include breakpoint-up("small") {
+        margin-left: 2.5em;
+      }
     }
 
     &::after {
