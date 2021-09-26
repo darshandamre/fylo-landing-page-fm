@@ -32,7 +32,7 @@
     font-size: $fs-xl;
     font-weight: 700;
 
-    @include breakpoint-up("small") {
+    @include breakpoint-up(small) {
       font-size: $fs-40px;
     }
   }
@@ -42,7 +42,7 @@
     margin: 1.72em auto 2em;
     color: $greyish-white;
 
-    @include breakpoint-up("small") {
+    @include breakpoint-up(small) {
       font-size: $fs-20px;
     }
   }
@@ -65,7 +65,7 @@
       );
     }
 
-    @include breakpoint-up("small") {
+    @include breakpoint-up(small) {
       font-size: $fs-16px;
     }
   }
