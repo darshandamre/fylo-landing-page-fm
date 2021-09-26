@@ -4,7 +4,7 @@
   }
 
   &__title {
-    font-size: $font-size-l;
+    font-size: $fs-l;
   }
 
   &__text {
@@ -12,7 +12,7 @@
   }
 
   &__link {
-    font-size: $font-size-sm;
+    font-size: $fs-sm;
     color: $cyan;
     padding-bottom: 0.25em;
     border-bottom: 1px solid $cyan;

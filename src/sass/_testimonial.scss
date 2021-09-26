@@ -23,7 +23,7 @@
     margin: 0;
     padding-bottom: 1.5em;
     color: $greyish-white;
-    font-size: $font-size-sm;
+    font-size: $fs-sm;
   }
 
   &__image {
@@ -39,12 +39,12 @@
 
   &__name {
     margin: 0;
-    font-size: $font-size-sm;
+    font-size: $fs-sm;
   }
 
   &__position {
     margin: 0;
     color: $greyish-white;
-    font-size: $font-size-xs;
+    font-size: $fs-xs;
   }
 }

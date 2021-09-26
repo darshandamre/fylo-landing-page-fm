@@ -20,6 +20,8 @@
 
   &__content {
     position: relative;
+
+    max-width: 720px;
   }
 
   &__image {
@@ -27,18 +29,27 @@
   }
 
   &__title {
-    font-size: $font-size-xl;
+    font-size: $fs-xl;
     font-weight: 700;
+
+    @include breakpoint-up("640") {
+      font-size: $fs-40px;
+    }
   }
 
   &__text {
-    margin: 1.72em 0 2em 0;
+    max-width: 37.5rem; //600px
+    margin: 1.72em auto 2em;
     color: $greyish-white;
+
+    @include breakpoint-up("640") {
+      font-size: $fs-20px;
+    }
   }
 
   &__btn {
     display: inline-block;
-    font-size: $font-size-main;
+    font-size: $fs-main;
     font-weight: 700;
 
     padding: 1.2em 5.7em;
@@ -52,6 +63,10 @@
         $cyan-light 0%,
         $blue-light 100%
       );
+    }
+
+    @include breakpoint-up("640") {
+      font-size: $fs-16px;
     }
   }
 }

@@ -16,7 +16,7 @@ body {
   background-color: $dark-blue-main-bg;
 
   font-family: "Open Sans", sans-serif;
-  font-size: $font-size-main;
+  font-size: $fs-main;
   color: $white;
 }
 
@@ -46,7 +46,7 @@ ul {
 
 .container {
   width: 89.333%;
-  max-width: 750px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
