@@ -9,18 +9,53 @@
     $dark-blue-footer-bg 100%
   );
 
+  @include breakpoint-up(small) {
+    font-size: $fs-16px;
+
+    background-image: linear-gradient(
+      to bottom,
+      $dark-blue-main-bg 0%,
+      $dark-blue-main-bg 60%,
+      $dark-blue-footer-bg 60%,
+      $dark-blue-footer-bg 100%
+    );
+  }
+
   &__container {
     padding: 3em 1.93em 2.72em 1.93em;
+    max-width: 53.75rem;
     background-color: $dark-blue-intro-email-bg;
     border-radius: 10px;
+
+    @include breakpoint-up(small) {
+      padding: 2.5em 4.75em;
+    }
   }
 
   &__title {
     margin-top: 0;
+
+    @include breakpoint-up(small) {
+      font-size: $fs-32px;
+      margin-bottom: 0.625em;
+    }
   }
 
   &__text {
     color: $greyish-white;
+
+    @include breakpoint-up(small) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__row {
+    @include breakpoint-up(small) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
   }
 
   &__email {
@@ -34,6 +69,13 @@
 
     border: none;
     border-radius: 100px;
+
+    @include breakpoint-up(small) {
+      font-size: $fs-16px;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 67.8%;
+    }
   }
 
   &__btn {
@@ -53,6 +95,12 @@
         $cyan-light 0%,
         $blue-light 100%
       );
+    }
+
+    @include breakpoint-up(small) {
+      font-size: $fs-16px;
+      width: max(28.25%, 12.5rem);
+      margin-left: 1em;
     }
   }
 }
