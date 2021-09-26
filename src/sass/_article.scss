@@ -1,21 +1,51 @@
 .article {
+  > .container {
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   &__image {
     padding: 2.15em 0;
+
+    @include breakpoint-up(medium) {
+      width: 45%;
+    }
+  }
+
+  &__content {
+    @include breakpoint-up(medium) {
+      width: 50%;
+      flex-grow: 0;
+    }
   }
 
   &__title {
     font-size: $fs-l;
+
+    @include breakpoint-up(small) {
+      font-size: $fs-40px;
+    }
   }
 
   &__text {
     color: $greyish-white;
+
+    @include breakpoint-up(small) {
+      font-size: $fs-20px;
+    }
   }
 
   &__link {
-    font-size: $fs-sm;
     color: $cyan;
     padding-bottom: 0.25em;
     border-bottom: 1px solid $cyan;
+
+    @include breakpoint-up(small) {
+      font-size: $fs-20px;
+    }
 
     &:hover {
       color: $white;
