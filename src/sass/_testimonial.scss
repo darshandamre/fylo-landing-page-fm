@@ -1,12 +1,36 @@
 .testimonial {
   margin: 10.85em 0;
 
+  @include breakpoint-up(small) {
+    font-size: $fs-16px;
+    margin-top: 6.25em;
+    margin-bottom: 12.5em;
+  }
+
   &__quotes-icon {
     width: 24px;
     height: 18px;
     position: relative;
     top: 5px;
     left: 5px;
+    z-index: -1;
+
+    @include breakpoint-up(small) {
+      width: 55px;
+      height: 41.25px;
+    }
+
+    @include breakpoint-up(medium) {
+      top: 12px;
+      left: -10px;
+    }
+  }
+
+  &__row {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-basis: 100%;
+    }
   }
 
   &__card {
@@ -16,6 +40,11 @@
 
     & + & {
       margin-top: 1.72em;
+
+      @include breakpoint-up(medium) {
+        margin-top: 0;
+        margin-left: 2.5em;
+      }
     }
   }
 
@@ -24,6 +53,10 @@
     padding-bottom: 1.5em;
     color: $greyish-white;
     font-size: $fs-sm;
+
+    @include breakpoint-up(small) {
+      font-size: $fs-16px;
+    }
   }
 
   &__image {
