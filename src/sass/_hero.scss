@@ -11,17 +11,61 @@
 
   position: relative;
 
+  @include breakpoint-up(xx-small) {
+    background: linear-gradient(
+      to bottom,
+      $dark-blue-intro-email-bg 0%,
+      $dark-blue-intro-email-bg 70%,
+      $dark-blue-main-bg 70%,
+      $dark-blue-main-bg 100%
+    );
+  }
+
+  @include breakpoint-mid(x-small, small) {
+    background: linear-gradient(
+      to bottom,
+      $dark-blue-intro-email-bg 0%,
+      $dark-blue-intro-email-bg 80%,
+      $dark-blue-main-bg 80%,
+      $dark-blue-main-bg 100%
+    );
+  }
+
+  @include breakpoint-up(x-medium) {
+    background: $dark-blue-intro-email-bg;
+  }
+
   &__overlay {
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 38%;
+
+    @include breakpoint-up(xx-small) {
+      bottom: 28%;
+    }
+    @include breakpoint-mid(x-small, small) {
+      bottom: 18%;
+    }
+    @include breakpoint-up(x-medium) {
+      bottom: 0;
+    }
+    @include breakpoint-up(medium) {
+      bottom: -6.5em;
+    }
   }
 
   &__content {
     position: relative;
+    max-width: 45rem;
 
-    max-width: 720px;
+    @include breakpoint-up(small) {
+      width: 60%;
+    }
+
+    @include breakpoint-up(medium) {
+      padding-bottom: 5em;
+    }
   }
 
   &__image {
