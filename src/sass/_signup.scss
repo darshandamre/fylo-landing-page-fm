@@ -27,6 +27,9 @@
     background-color: $dark-blue-intro-email-bg;
     border-radius: 10px;
 
+    position: relative;
+    box-shadow: 6px 6px 20px -10px black;
+
     @include breakpoint-up(small) {
       padding: 2.5em 4.75em;
     }
