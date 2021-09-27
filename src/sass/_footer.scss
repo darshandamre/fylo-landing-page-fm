@@ -1,16 +1,26 @@
 .footer {
   background-color: $dark-blue-footer-bg;
 
+  @include breakpoint-up(small) {
+    font-size: $fs-l;
+  }
+
   &__logo {
     padding: 5.15em 0 3.05em 0;
   }
 
   ul {
     margin-bottom: 3.5em;
+
+    @include breakpoint-up(x-small) {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
-    margin-bottom: 1em;
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
 
     &:hover {
       color: $white;
@@ -23,8 +33,12 @@
   font-style: normal;
   margin-bottom: 6em;
 
-  > div {
-    margin-bottom: 1.5em;
+  @include breakpoint-up(x-small) {
+    margin-bottom: 0;
+  }
+
+  &__content:not(:last-child) {
+    margin-bottom: 1.3125rem;
   }
 
   &__icon {
@@ -47,12 +61,18 @@
 
   &__details {
     margin: 0;
+    max-width: 21em;
   }
 }
 
 .social {
   margin-top: 5em;
   padding-bottom: 3em;
+
+  @include breakpoint-up(x-medium) {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
 
   &__icon {
     width: 28px;
@@ -63,6 +83,11 @@
 
     border-radius: 100px;
 
+    @include breakpoint-up(small) {
+      width: 32px;
+      height: 32px;
+    }
+
     & + & {
       margin-left: 0.7em;
     }
@@ -70,6 +95,38 @@
     &:hover {
       color: $cyan;
       border: 1px solid $cyan;
+    }
+  }
+}
+
+.footer {
+  &__row {
+    &--x-small {
+      @include breakpoint-up(x-small) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @include breakpoint-up(x-medium) {
+        flex-grow: 0.75;
+      }
+    }
+
+    &--x-medium {
+      @include breakpoint-up(x-medium) {
+        padding-bottom: 5em;
+
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &--large {
+      @include breakpoint-up(large) {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 0.25;
+      }
     }
   }
 }
